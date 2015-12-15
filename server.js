@@ -4,7 +4,7 @@ var app = express();
 // Set the view engine && public folder
 app.set('view engine', 'html');
 app.set('views', __dirname);
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/assets'));
 
 // Register root route
 app.get('/pixelArt', function(req, res) {

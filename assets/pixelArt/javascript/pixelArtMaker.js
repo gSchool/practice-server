@@ -1,5 +1,4 @@
 var currentColor = 'white';
-var marioSound = new Audio('coin.wav');
 
 function createSquare(color, size){
 
@@ -131,7 +130,6 @@ function flashColors(squares){
 		setInterval(function (square){
 				console.log(square);
 				colorSquare(square, generateRandomColor());
-				marioSound.play();
 		
 		}, (500 + squares[j].myDelay * 10), squares[j]);
 	}

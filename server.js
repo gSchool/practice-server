@@ -3,12 +3,19 @@ var app = express();
 
 // Set the view engine && public folder
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/pixelArt/views');
+app.set('views', [
+	__dirname + '/pixelArt/views',
+	__dirname + '/spotify/views'
+]);
 app.use(express.static(__dirname + '/assets'));
 
 // Import and register the pixelArt routes
 var pixelRoutes = require('./pixelArt/controllers/routes')
 app.use('/pixelArt', pixelRoutes);
+
+// Import and register the pixelArt routes
+var spotifyRoutes = require('./spotify/controllers/routes')
+app.use('/spotify', spotifyRoutes);
 
 var server = app.listen(3000, function () {
   var port = server.address().port;

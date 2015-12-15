@@ -3,11 +3,12 @@ var app = express();
 
 // Set the view engine && public folder
 app.set('view engine', 'html');
+app.set('views', __dirname);
 app.use(express.static(__dirname + '/public'));
 
 // Register root route
 app.get('/pixelArt', function(req, res) {
-  res.render('pixelArt/views/index');
+  res.sendFile(__dirname + '/pixelArt/views/index.html');
 });
 
 var server = app.listen(3000, function () {

@@ -1,0 +1,11 @@
+{
+  "name": "tyler-cumulative",
+  "version": "1.0.0",
+  "description": "a place to hold apps we built in the front end",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Bettilyon",
+  "license": "ISC"
+}

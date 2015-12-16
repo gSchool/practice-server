@@ -3,8 +3,7 @@ var router = express.Router()
 
 // function songRoutes(router) {
 router.get('/', function(req, res) {
-  console.log("YO YO YO")
-  res.render('index');
+  res.render('pixelArt/views/pixelArt');
 });
 
 module.exports = router;

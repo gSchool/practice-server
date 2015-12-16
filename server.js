@@ -3,10 +3,7 @@ var app = express();
 
 // Set the view engine && public folder
 app.set('view engine', 'ejs');
-app.set('views', [
-	__dirname + '/pixelArt/views',
-	__dirname + '/spotify/views'
-]);
+app.set('views', [__dirname]);
 app.use(express.static(__dirname + '/assets'));
 
 // Import and register the pixelArt routes

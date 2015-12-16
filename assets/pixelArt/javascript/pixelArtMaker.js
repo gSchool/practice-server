@@ -73,21 +73,15 @@ function addActionToBoard(squares, callback){
 }
 
 var squares = createCheckeredBoard('white', 52 * 32);
-
 var colorPaletteInput = document.getElementById('background-color');
 currentColor = colorPaletteInput.value;
 
 colorPaletteInput.addEventListener('change', function(e){
-	
-
-		currentColor = e.target.value;
-	
+	currentColor = e.target.value;
 });
 
 addActionToBoard(squares,function(e){
 	if(e.buttons === 1){
 		e.target.style.background = currentColor;
 	}	
-	
-	
 });

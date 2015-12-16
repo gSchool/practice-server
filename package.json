@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tyler Bettilyon",
-  "license": "All Rights Reserved",
+  "license": "LicenseRef-LICENSE",
   "dependencies": {
     "ejs": "^2.3.4",
     "express": "^4.13.3"
